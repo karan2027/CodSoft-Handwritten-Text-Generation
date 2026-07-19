@@ -97,9 +97,10 @@ def load_tf_session(model_path):
 
 @st.cache_data
 def load_data_files():
-    with open(os.path.join('data', 'translation.pkl'), 'rb') as file:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(base_dir, 'data', 'translation.pkl'), 'rb') as file:
         translation = pickle.load(file)
-    with open(os.path.join('data', 'styles.pkl'), 'rb') as file:
+    with open(os.path.join(base_dir, 'data', 'styles.pkl'), 'rb') as file:
         styles = pickle.load(file)
     return translation, styles
 
@@ -186,7 +187,8 @@ def main():
     st.markdown('<div class="subtitle">Generate realistic handwriting samples from text using recurrent neural networks (Graves paper implementation).</div>', unsafe_allow_html=True)
 
     # Initialize model session and configs
-    model_path = os.path.join('pretrained', 'model-29')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(base_dir, 'pretrained', 'model-29')
     
     with st.spinner("Initializing TensorFlow model (this may take a few seconds on first run)..."):
         sess, graph = load_tf_session(model_path)
