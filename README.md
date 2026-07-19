@@ -1,9 +1,9 @@
 ## Handwriting generation
 Implementation of handwriting generation with use of recurrent neural networks in tensorflow. Based on Alex Graves paper (https://arxiv.org/abs/1308.0850).
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://karan2027-codsoft-handw-handwriting-generation-masterapp-eaowx3.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://karan2027-handwriting-generation.streamlit.app/)
 
-### 🌐 Live Demo: [karan2027-codsoft-handw-handwriting-generation-masterapp-eaowx3.streamlit.app](https://karan2027-codsoft-handw-handwriting-generation-masterapp-eaowx3.streamlit.app/)
+### 🌐 Live Demo: [karan2027-handwriting-generation.streamlit.app](https://karan2027-handwriting-generation.streamlit.app/)
 
 ---
 
