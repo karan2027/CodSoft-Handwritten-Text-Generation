@@ -1,0 +1,6 @@
+handwriting-generation-master/env/
+handwriting-generation-master/venv/
+handwriting-generation-master/.venv/
+handwriting-generation-master/__pycache__/
+handwriting-generation-master/*.py[cod]
+handwriting-generation-master/output.png

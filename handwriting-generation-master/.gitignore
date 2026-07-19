@@ -1,0 +1,23 @@
+# JetBrains IDEs
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env
+.venv
+*.venv/
+
+# Project specific outputs and datasets
+output.png
+data/dataset.npy
+data/labels.npy
+summary/
+experiment-*/
+
+# OS files
+.DS_Store
+Thumbs.db
